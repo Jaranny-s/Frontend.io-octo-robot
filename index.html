@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+<link rel="stylesheet" href="CSS/reset.css"> <!-- resets the CSS on the page in case of loading issues -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style type="text/css">
+  		* {
+         box-sizing: border-box;
+      }
+      html, body {
+      position: relative;
+      	margin: 0;
+      	padding: 0;
+      	font-family: torso;
+      	text-align: center;
+      	color: #545454;
+      	}
+      	@font-face {
+				font-family: header;
+				src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf');
+			}
+			@font-face {
+				font-family: torso;
+				src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+			}
+			.SOR {
+				font-family: header;
+				font-size: 27px;
+				margin: 30px 0;
+				color: black;
+			}
+			.intro {
+				color: #545454;
+				font-family: torso;
+				font-size: 15px;
+				margin: 0 15px;
+				text-align: left;
+			}
+			.prep-wrap {
+				font-family: torso;
+				font-size: 15px;
+				background: #FFF7FC;
+				margin: 20px 35px;
+				padding: 10px;
+				border-radius: 10px;
+				text-align: left;
+			}
+			.prep {
+				font-size: 17px;
+				font-weight: bold;
+				color: #76304C;
+			}
+			.prep-dot {
+				list-style-type: disc;
+				color: #76304C;
+			}
+			.prep-bold {
+				font-weight: bold;
+				color: #545454;
+			}
+			.prep-light {
+				color: #545454;
+			}
+		#space1 {
+			padding: 10px 0;
+		}
+		.brown {
+			font-family: header;
+			font-size: 25px;
+			color: #79493F;
+			text-align: left;
+			margin: 20px 30px 0px 30px;
+		}
+		.ingre-list {
+			font-family: torso;
+			font-size: 15px;
+			color: #79493F;
+			margin: 0px 20px;
+			list-style-type: disc;
+			list-style-position: outside;
+		}
+		#ingre-list {
+			padding: 10px 0;
+			text-align: left;
+		}
+		#ingre-li-col {
+			color: #545454;
+			margin: 0 20px;
+		}
+		.list-color {
+			color: #545454;
+			font-weight: light;
+			
+		}
+		.instruct-list {
+			color: #79493F;
+				font-size: 15px;
+				margin: 10px 15px;
+				text-align: left;
+				font-weight: bold;
+		}
+		.instruct-light {
+			font-weight: normal;
+		}
+		.nutri {
+			text-align: left;
+			border-bottom: thin solid #545454;
+			margin: 0px 50px 20px;
+			padding: 10px 10px;
+		}
+		#nutri-a {
+			margin: 20px;
+		}
+		#nutri-b {
+			margin: 30px;
+			font-weight: bold;
+			text-align: center;
+			color: #79493F;
+		}
+    .attribution { 
+    font-size: 11px;
+    text-align: center;
+    }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<img src="./assets/images/image-omelette.jpeg" width="100%" height="200px"/>
+
+<br/>
+
+  <div class="SOR">Simple Omelette Recipe</div>
+
+  <div class="intro">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.</div>
+
+  <div class="prep-wrap">
+  	
+  	<div class="prep">Preparation time</div>
+  	
+<ul class="prep-dot">
+	<li id="space1"><span class="prep-bold">Total:</span>
+	<span class="prep-light">Approximately 10 minutes</span>
+	</li>
+
+  <li id="space1">
+  	<span class="prep-bold">Preparation:</span>
+ <span class="prep-light">	5 minutes</span>
+ </li>
+ 
+ <li id="space1">
+ 	<span class="prep-bold">Cooking:</span>
+<span class="prep-light">5 minutes</span>
+</li>
+ </ul>
+ </div>
+ 
+  <div class="brown">Ingredients</div>
+<ul class="ingre-list">
+  <li id="ingre-list"><span id="ingre-li-col">2-3 large eggs</li>
+  <li id="ingre-list">
+  	<span id="ingre-li-col">Salt, to taste</span>
+  </li>
+  <li id="ingre-list">
+  	<span id="ingre-li-col">Pepper, to taste</span>
+  </li>
+  <li id="ingre-list">
+  	<span id="ingre-li-col">1 tablespoon of butter or oil</span>
+  </li>
+  <li id="ingre-list">
+  	<span id="ingre-li-col">Optional fillings: cheese, diced vegetables, cooked meats, herbs</span>
+  	</li>
+</ul>
+
+  <div class="brown">Instructions</div>
+
+<ol>
+	<li class="instruct-list">
+  <span class="list-color">Beat the eggs: <span class="instruct-light">In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  You can add a tablespoon of water or milk for a fluffier texture.</span></span></li>
+
+  <li class="instruct-list">
+  <span class="list-color">Heat the pan: <span class="instruct-light">Place a non-stick frying pan over medium heat and add butter or oil.</span></span></li>
+
+ <li class="instruct-list">
+  <span class="list-color">Cook the omelette: <span class="instruct-light">Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  the eggs evenly coat the surface.</span></span></li>
+
+ <li class="instruct-list">
+  <span class="list-color">Add fillings (optional): <span class="instruct-light">When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.</span></span></li>
+
+ <li class="instruct-list">
+  <span class="list-color">Fold and serve: <span class="instruct-light">As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.</span></span></li>
+
+ <li class="instruct-list">
+  <span class="list-color">Enjoy: <span class="instruct-light">Serve hot, with additional saltspan and pepper if needed.</span></span></li>
+  </ol>
+
+  <div class="brown">Nutrition</div>
+
+  <div class="intro">The table below shows nutritional values per serving without the additional fillings.</div>
+<br/>
+<div class="nutri">
+  <span id="nutri-a">Calories</span>
+  <span id="nutri-b">277kcal</span>
+</div>
+
+<div class="nutri">
+  <span id="nutri-a">Carbs</span>
+  <span id="nutri-b">0g</span>
+</div>
+
+  <div class="nutri">
+  <span id="nutri-a">Protein</span>
+  <span id="nutri-b">20g</span>
+</div>
+
+  <div class="nutri">
+  <span id="nutri-a">Fat</span>
+  <span id="nutri-b">22g</span>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Jaranny-s">Jaranny-s</a>.
+  </div>
+  <br/>
+  <br/>
+</body>
+</html>
